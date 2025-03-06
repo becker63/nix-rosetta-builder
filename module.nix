@@ -119,7 +119,7 @@ in
         sshUserPublicKeyFileName
         ;
 
-      debugInsecurely = false; # enable root access in VM and debug logging
+      debugInsecurely = true; # enable root access in VM and debug logging
 
       imageWithFinalConfig = image.override {
         inherit debugInsecurely;
